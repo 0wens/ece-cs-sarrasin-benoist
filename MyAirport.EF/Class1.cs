@@ -2,8 +2,7 @@
 
 namespace CCY.MyAirport.EF
 {
-    public class Vol
+    public class Class1
     {
-
     }
 }
