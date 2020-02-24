@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CCY.MyAirport.ConsoleApp
+namespace PSB.MyAirport.ConsoleApp
 {
     class Program
     {
