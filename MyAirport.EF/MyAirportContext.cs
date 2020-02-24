@@ -6,8 +6,8 @@ namespace PSB.MyAirport.EF
 {
     public class MyAirportContext : DbContext
     {
-        public DbSet<Bagage> Bagage { get; set; }
-        public DbSet<Vol> Vol { get; set; }
+        public DbSet<Bagage> Bagages { get; set; }
+        public DbSet<Vol> Vols { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

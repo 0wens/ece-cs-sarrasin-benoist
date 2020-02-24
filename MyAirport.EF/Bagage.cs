@@ -7,7 +7,6 @@ namespace PSB.MyAirport.EF
     public class Bagage
     {
         public int BagageId { get; set; }
-        public int VolId { get; set; }
         public bool Prioritaire { get; set; }
         public DateTime DateCreation { get; set; }
         public Vol Vol { get; set; }
