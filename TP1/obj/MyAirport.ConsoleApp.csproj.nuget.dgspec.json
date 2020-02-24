@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\q95\\Documents\\ece-cs-sarrasin-benoist\\TP1\\MyAirport.ConsoleApp.csproj": {}
+    "C:\\Users\\jsarr\\OneDrive\\Documents\\GitHub\\ece-cs-sarrasin-benoist\\TP1\\MyAirport.ConsoleApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\q95\\Documents\\ece-cs-sarrasin-benoist\\TP1\\MyAirport.ConsoleApp.csproj": {
+    "C:\\Users\\jsarr\\OneDrive\\Documents\\GitHub\\ece-cs-sarrasin-benoist\\TP1\\MyAirport.ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\q95\\Documents\\ece-cs-sarrasin-benoist\\TP1\\MyAirport.ConsoleApp.csproj",
+        "projectUniqueName": "C:\\Users\\jsarr\\OneDrive\\Documents\\GitHub\\ece-cs-sarrasin-benoist\\TP1\\MyAirport.ConsoleApp.csproj",
         "projectName": "MyAirport.ConsoleApp",
-        "projectPath": "C:\\Users\\q95\\Documents\\ece-cs-sarrasin-benoist\\TP1\\MyAirport.ConsoleApp.csproj",
-        "packagesPath": "C:\\Users\\q95\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\q95\\Documents\\ece-cs-sarrasin-benoist\\TP1\\obj\\",
+        "projectPath": "C:\\Users\\jsarr\\OneDrive\\Documents\\GitHub\\ece-cs-sarrasin-benoist\\TP1\\MyAirport.ConsoleApp.csproj",
+        "packagesPath": "C:\\Users\\jsarr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jsarr\\OneDrive\\Documents\\GitHub\\ece-cs-sarrasin-benoist\\TP1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\q95\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\jsarr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -41,6 +37,18 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
