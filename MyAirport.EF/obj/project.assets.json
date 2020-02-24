@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\q95\\Documents\\ece-cs-sarrasin-benoist\\TP1\\MyAirport.ConsoleApp.csproj",
-      "projectName": "MyAirport.ConsoleApp",
-      "projectPath": "C:\\Users\\q95\\Documents\\ece-cs-sarrasin-benoist\\TP1\\MyAirport.ConsoleApp.csproj",
+      "projectUniqueName": "C:\\Users\\q95\\Documents\\ece-cs-sarrasin-benoist\\MyAirport.EF\\MyAirport.EF.csproj",
+      "projectName": "MyAirport.EF",
+      "projectPath": "C:\\Users\\q95\\Documents\\ece-cs-sarrasin-benoist\\MyAirport.EF\\MyAirport.EF.csproj",
       "packagesPath": "C:\\Users\\q95\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\q95\\Documents\\ece-cs-sarrasin-benoist\\TP1\\obj\\",
+      "outputPath": "C:\\Users\\q95\\Documents\\ece-cs-sarrasin-benoist\\MyAirport.EF\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
