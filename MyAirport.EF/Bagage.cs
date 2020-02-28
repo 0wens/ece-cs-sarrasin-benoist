@@ -17,5 +17,6 @@ namespace PSB.MyAirport.EF
         public String Ssur { get; set; }
         public String Destination { get; set; }
         public String Escale { get; set; }
+        
     }
 }
