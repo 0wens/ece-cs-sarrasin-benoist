@@ -338,3 +338,22 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+*.cache
+*.cache
+MyAirport.EF/obj/Debug/netcoreapp3.1/MyAirport.EF.assets.cache
+MyAirport.EF/obj/MyAirport.EF.csproj.nuget.g.props
+MyAirport.EF/obj/project.assets.json
+TP1/.vs/MyAirport/v16/.suo
+MyAirport.EF/obj/Debug/netcoreapp3.1/MyAirport.EF.csprojAssemblyReference.cache
+MyAirport.EF/obj/MyAirport.EF.csproj.nuget.cache
+MyAirport.EF/obj/MyAirport.EF.csproj.nuget.dgspec.json
+MyAirport.EF/obj/MyAirport.EF.csproj.nuget.g.props
+MyAirport.EF/obj/project.assets.json
+TP1/.vs/MyAirport/DesignTimeBuild/.dtbcache
+TP1/.vs/MyAirport/v16/Server/sqlite3/storage.ide
+TP1/obj/Debug/netcoreapp3.1/MyAirport.ConsoleApp.assets.cache
+TP1/obj/Debug/netcoreapp3.1/MyAirport.ConsoleApp.csprojAssemblyReference.cache
+TP1/obj/MyAirport.ConsoleApp.csproj.nuget.cache
+TP1/obj/MyAirport.ConsoleApp.csproj.nuget.dgspec.json
+TP1/obj/MyAirport.ConsoleApp.csproj.nuget.g.props
+TP1/obj/project.assets.json
