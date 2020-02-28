@@ -10,8 +10,8 @@ using PSB.MyAirport.EF;
 namespace CCY.MyAirport.EF.Migrations
 {
     [DbContext(typeof(MyAirportContext))]
-    [Migration("20200224093651_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20200228083703_SecondCreate")]
+    partial class SecondCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -52,14 +52,14 @@ namespace CCY.MyAirport.EF.Migrations
                     b.Property<string>("Sta")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("VolId")
+                    b.Property<int?>("VolId")
                         .HasColumnType("int");
 
                     b.HasKey("BagageId");
 
                     b.HasIndex("VolId");
 
-                    b.ToTable("Bagage");
+                    b.ToTable("Bagages");
                 });
 
             modelBuilder.Entity("PSB.MyAirport.EF.Vol", b =>
@@ -92,16 +92,14 @@ namespace CCY.MyAirport.EF.Migrations
 
                     b.HasKey("VolId");
 
-                    b.ToTable("Vol");
+                    b.ToTable("Vols");
                 });
 
             modelBuilder.Entity("PSB.MyAirport.EF.Bagage", b =>
                 {
                     b.HasOne("PSB.MyAirport.EF.Vol", "Vol")
                         .WithMany()
-                        .HasForeignKey("VolId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("VolId");
                 });
 #pragma warning restore 612, 618
         }
