@@ -96,7 +96,7 @@ namespace CCY.MyAirport.EF.Migrations
             modelBuilder.Entity("PSB.MyAirport.EF.Bagage", b =>
                 {
                     b.HasOne("PSB.MyAirport.EF.Vol", "Vol")
-                        .WithMany()
+                        .WithMany("Bagages")
                         .HasForeignKey("VolId");
                 });
 #pragma warning restore 612, 618
