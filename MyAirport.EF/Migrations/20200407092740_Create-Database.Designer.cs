@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PSB.MyAirport.EF;
 
-namespace CCY.MyAirport.EF.Migrations
+namespace PSB.MyAirport.EF.Migrations
 {
     [DbContext(typeof(MyAirportContext))]
-    [Migration("20200228083703_SecondCreate")]
-    partial class SecondCreate
+    [Migration("20200407092740_Create-Database")]
+    partial class CreateDatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -32,6 +32,7 @@ namespace CCY.MyAirport.EF.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CodeIata")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("DateCreation")
@@ -43,7 +44,7 @@ namespace CCY.MyAirport.EF.Migrations
                     b.Property<string>("Escale")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("Prioritaire")
+                    b.Property<bool?>("Prioritaire")
                         .HasColumnType("bit");
 
                     b.Property<string>("Ssur")
@@ -70,6 +71,7 @@ namespace CCY.MyAirport.EF.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Cie")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Des")
@@ -82,9 +84,10 @@ namespace CCY.MyAirport.EF.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Lig")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Pax")
+                    b.Property<int?>("Pax")
                         .HasColumnType("int");
 
                     b.Property<string>("Pkg")
@@ -98,7 +101,7 @@ namespace CCY.MyAirport.EF.Migrations
             modelBuilder.Entity("PSB.MyAirport.EF.Bagage", b =>
                 {
                     b.HasOne("PSB.MyAirport.EF.Vol", "Vol")
-                        .WithMany()
+                        .WithMany("Bagages")
                         .HasForeignKey("VolId");
                 });
 #pragma warning restore 612, 618

@@ -21,6 +21,7 @@ namespace MyAirportWebApi.Controllers
         }
 
         // GET: api/Bagages
+        [ProducesResponseType(StatusCodes.Status200OK)]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Bagage>>> GetBagages()
         {
@@ -28,6 +29,8 @@ namespace MyAirportWebApi.Controllers
         }
 
         // GET: api/Bagages/5
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [HttpGet("{id}")]
         public async Task<ActionResult<Bagage>> GetBagage(int id)
         {
@@ -44,6 +47,7 @@ namespace MyAirportWebApi.Controllers
         // PUT: api/Bagages/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
+        [ProducesResponseType(StatusCodes.Status200OK)]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutBagage(int id, Bagage bagage)
         {
@@ -76,6 +80,7 @@ namespace MyAirportWebApi.Controllers
         // POST: api/Bagages
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
+        [ProducesResponseType(StatusCodes.Status201Created)]
         [HttpPost]
         public async Task<ActionResult<Bagage>> PostBagage(Bagage bagage)
         {
@@ -86,6 +91,8 @@ namespace MyAirportWebApi.Controllers
         }
 
         // DELETE: api/Bagages/5
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         [HttpDelete("{id}")]
         public async Task<ActionResult<Bagage>> DeleteBagage(int id)
         {

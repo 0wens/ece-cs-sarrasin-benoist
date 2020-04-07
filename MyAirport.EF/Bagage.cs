@@ -7,16 +7,21 @@ namespace PSB.MyAirport.EF
     public class Bagage
     {
         public int BagageId { get; set; }
-        public int? VolId { get; set; }
-        public bool Prioritaire { get; set; }
+        public bool? Prioritaire { get; set; }
         public DateTime DateCreation { get; set; }
-        public Vol Vol { get; set; }
-        public String CodeIata { get; set; }
-        public String Classe { get; set; }
-        public String Sta { get; set; }
-        public String Ssur { get; set; }
-        public String Destination { get; set; }
-        public String Escale { get; set; }
-        
+        public virtual Vol? Vol { get; set; }
+        public string CodeIata { get; set; }
+        public string? Classe { get; set; }
+        public string? Sta { get; set; }
+        public string? Ssur { get; set; }
+        public string? Destination { get; set; }
+        public string? Escale { get; set; }
+
+        public Bagage(string codeIata, DateTime dateCreation)
+        {
+            CodeIata = codeIata;
+            DateCreation = dateCreation;            
+        }
+
     }
 }

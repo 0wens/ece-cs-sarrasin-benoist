@@ -25,7 +25,7 @@ namespace PSB.MyAirport.App
 
                 // Create
                 Console.WriteLine("Création du vol LH1232");
-                Vol v1 = new Vol
+                /*Vol v1 = new Vol
                 {
                     Cie = "LH",
                     Des = "BKK",
@@ -34,35 +34,25 @@ namespace PSB.MyAirport.App
                     Lig = "1232",
                     Pkg = "R52",
                     Pax = 238
-                };
+                };*/
+                Vol v1 = new Vol("LH", "1232", DateTime.Now) { Des = "BKK" };
                 db.Add(v1);
 
-                Console.WriteLine("Creation vol SQ333");
-                Vol v2 = new Vol
-                {
-                    Cie = "SK",
-                    Des = "CDG",
-                    Dhc = Convert.ToDateTime("14/01/2020 18:20"),
-                    Imm = "TG43",
-                    Lig = "333",
-                    Pkg = "R51",
-                    Pax = 423
-                };
-                db.Add(v2);
-
                 Console.WriteLine("creation du bagage 012387364501");
-                Bagage b1 = new Bagage
+                /*Bagage b1 = new Bagage
                 {
                     Classe = "Y",
                     CodeIata = "012387364501",
                     DateCreation = Convert.ToDateTime("14/01/2020 12:52"),
                     Destination = "BEG"
-                };
+                }; */
+                Bagage b1 = new Bagage("012387364501", DateTime.Now) { Destination = "BKK" };
                 db.Add(b1);
 
                 db.SaveChanges();
                 Console.ReadLine();
 
+                
                 // Read
                 Console.WriteLine("Voici la liste des vols disponibles");
                 var vol = db.Vols
@@ -75,7 +65,7 @@ namespace PSB.MyAirport.App
 
                 // Update
                 Console.WriteLine($"Le bagage {b1.BagageId} est modifié pour être rattaché au vol {v1.VolId} => {v1.Cie}{v1.Lig}");
-                b1.VolId = v1.VolId;
+                //b1.VolId = v1.VolId;
                 db.SaveChanges();
                 Console.ReadLine();
 
