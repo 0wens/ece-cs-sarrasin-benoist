@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>CCY.MyAirport.EF</RootNamespace>
+    <Nullable>enable</Nullable>
+    <RootNamespace>PSB.MyAirport.EF</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

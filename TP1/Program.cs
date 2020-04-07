@@ -19,8 +19,8 @@ namespace PSB.MyAirport.App
             optionsBuilder.UseLoggerFactory(MyLoggerFactory);
             optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["Airport"].ConnectionString);
 
-//            using (var db = new MyAirportContext(optionsBuilder.Options))
-            using (var db = new MyAirportContext())
+            using (var db = new MyAirportContext(optionsBuilder.Options))
+//            using (var db = new MyAirportContext())
             {
 
                 // Create
