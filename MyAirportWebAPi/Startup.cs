@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using PSB.MyAirport.EF;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 
 namespace PSB.MyAirport.WebAPi
@@ -30,6 +31,11 @@ namespace PSB.MyAirport.WebAPi
         {
             services.AddDbContext<MyAirportContext>(option => option.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=Airport;Integrated Security=True"));
             services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(o =>
+            {
+                o.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+            }); ;
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

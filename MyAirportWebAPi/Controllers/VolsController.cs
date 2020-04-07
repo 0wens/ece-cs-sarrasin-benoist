@@ -31,7 +31,7 @@ namespace MyAirportWebApi.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Vol>> GetVol(int id, [FromQuery] bool includeBagage = true)
         {
-            var volRes;
+            Vol volRes;
             
             if (includeBagage)
             {
