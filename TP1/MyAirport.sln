@@ -7,11 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAirport.ConsoleApp", "MyA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAirport.EF", "..\MyAirport.EF\MyAirport.EF.csproj", "{9A353EFA-3B65-4ADC-B49B-0BB6C945D8E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAirportWebAPi", "..\MyAirportWebAPi\MyAirportWebAPi.csproj", "{B8158EB5-1274-44DF-9417-F838F4DCCB4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAirportWebAPi", "..\MyAirportWebAPi\MyAirportWebAPi.csproj", "{B8158EB5-1274-44DF-9417-F838F4DCCB4C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{DDA4984C-E4A0-4C6A-ABB0-0E80667B8FCE} = {DDA4984C-E4A0-4C6A-ABB0-0E80667B8FCE}
 		{9A353EFA-3B65-4ADC-B49B-0BB6C945D8E9} = {9A353EFA-3B65-4ADC-B49B-0BB6C945D8E9}
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyAirportGraphQL", "..\MyAirportGraphQL\MyAirportGraphQL.csproj", "{3D6068E0-E66F-4C74-92D0-F4AC3958251E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyAirportRazor", "..\MyAirportRazor\MyAirportRazor.csproj", "{0DF6DB87-318A-4E2B-8ADA-49152A72AAE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +35,14 @@ Global
 		{B8158EB5-1274-44DF-9417-F838F4DCCB4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8158EB5-1274-44DF-9417-F838F4DCCB4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8158EB5-1274-44DF-9417-F838F4DCCB4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D6068E0-E66F-4C74-92D0-F4AC3958251E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D6068E0-E66F-4C74-92D0-F4AC3958251E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D6068E0-E66F-4C74-92D0-F4AC3958251E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D6068E0-E66F-4C74-92D0-F4AC3958251E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DF6DB87-318A-4E2B-8ADA-49152A72AAE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DF6DB87-318A-4E2B-8ADA-49152A72AAE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DF6DB87-318A-4E2B-8ADA-49152A72AAE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DF6DB87-318A-4E2B-8ADA-49152A72AAE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
